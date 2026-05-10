@@ -1,16 +1,15 @@
 import { Routes, Route } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Work from "./pages/Work"
-import Contact from "./pages/Contact"
+import Navbar from "./components/Navbar.jsx"
+import Home from "./pages/Home.jsx"
+import About from "./pages/About.jsx"
+import Work from "./pages/Work.jsx"
+import Contact from "./pages/Contact.jsx"
 import Nabu from "./pages/work_pages/NABU.jsx"
 import Tuts from "./pages/work_pages/TUTS.jsx"
 import Retex from "./pages/work_pages/RETEX.jsx"
 import Hortaranda from "./pages/work_pages/HORTARANDA.jsx"
 import Footer from "./components/Footer.jsx"
-import ContactSection from "./components/ContactSection.jsx";
-
+import ContactSection from "./components/ContactSection.jsx"
 
 function App() {
     return (
@@ -28,8 +27,8 @@ function App() {
                 <Route path="/work/retex" element={<Retex />} />
                 <Route path="/work/hortaranda" element={<Hortaranda />} />
             </Routes>
-            <ContactSection />
 
+            <ContactSection />
             <Footer />
         </>
     )
