@@ -374,7 +374,7 @@ img {
   position: relative;
   background: #E9E5DF;
   border-radius: 26px;
-  min-height: 480px;
+  height: 480px;
   overflow: hidden;
   display: flex;
   align-items: center;
