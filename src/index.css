@@ -384,9 +384,10 @@ img {
 
 .work-showcase-media img {
   width: 100%;
-  max-width: 185px;
-  height: auto;
+  height: 100%;
   object-fit: contain;
+  object-position: center;
+  display: block;
   filter: drop-shadow(0 14px 24px rgba(30, 30, 30, 0.14));
   transition: transform 0.28s ease;
 }
