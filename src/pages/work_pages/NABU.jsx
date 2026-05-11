@@ -1,7 +1,6 @@
 import nabuScreen1 from "../../assets/NABU/NABU_2.png"
 import nabuScreen2 from "../../assets/NABU/nabu-phones.jpg"
-import nabuScreen3 from "../../assets/NABU/Equipa_nabu.JPG"
-import nabuScreen4 from "../../assets/FOTOS_AMAIS/amigos_3.jpg"
+
 
 import carlosImg from "../../assets/NABU/Group 4.png"
 import franciscoImg from "../../assets/NABU/Group 2.png"
