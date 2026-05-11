@@ -14,7 +14,7 @@ function ContactSection() {
                 </p>
 
                 <a
-                    href="mailto:o.teu.email@exemplo.com"
+                    href="mailto:marianalopestavares18@gmail.pt"
                     className="contact-button"
                 >
                     Entrar em contacto comigo
