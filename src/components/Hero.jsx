@@ -8,7 +8,7 @@ function Hero() {
                 </h1>
 
                 <p className="hero-description">
-                   Sou a Mariana Tavares, uma pessoa apaixonada pela criatividade e inovação, pelo trabalho em equipa e pela aquisição de novos conhecimentos.
+                   Sou uma pessoa apaixonada pela criatividade e inovação, pelo trabalho em equipa e pela aquisição de novos conhecimentos.
                 </p>
             </div>
         </section>
