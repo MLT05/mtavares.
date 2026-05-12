@@ -1,46 +1,43 @@
-import nabuScreen1 from "../../assets/RETEX/RETEX_LOGO.svg"
-import nabuScreen2 from "../../assets/NABU/nabu-phones.jpg"
+import retexLogo from "../../assets/RETEX/RETEX_LOGO.svg"
+import retexScreen from "../../assets/RETEX/retex-phones.svg"
+import marianaImg from "../../assets/RETEX/RETEX_LOGO.svg"
 
+import { FiInstagram, FiLinkedin } from "react-icons/fi"
 
-import carlosImg from "../../assets/NABU/Group 4.png"
-import franciscoImg from "../../assets/NABU/Group 2.png"
-import marianaImg from "../../assets/NABU/Group 3.png"
-import mariaImg from "../../assets/NABU/Group 4.png"
-
-function Nabu() {
+function Retex() {
     const projectMeta = [
         { id: "year", label: "Ano", value: "2025" },
-        { id: "role", label: "O Meu Papel", value: "UX/UI Design · Desenvolvimento" },
+        { id: "role", label: "O Meu Papel", value: "UX/UI Design · Gestão de Redes Sociais" },
         { id: "team", label: "Equipa", value: "4 elementos" },
     ]
 
     const teamMembers = [
-        { id: "carlos", name: "Carlos Teixeira", image: carlosImg },
-        { id: "francisco", name: "Francisco Seabra", image: franciscoImg },
         { id: "mariana", name: "Mariana Tavares", image: marianaImg },
-        { id: "maria", name: "Maria Leonor Frias", image: mariaImg },
+        { id: "maria", name: "Maria Leonor Frias", image: marianaImg },
+        { id: "guilherme", name: "Guilherme Baptista", image: marianaImg },
+        { id: "hugo", name: "Hugo Humberto", image: marianaImg },
     ]
 
     const caseSections = [
         {
             id: "contexto",
             title: "O Contexto.",
-            text: "No âmbito da unidade curricular de Bases de Dados e Tecnologias Server-side, desenvolvemos a NABU como resposta ao problema do desperdício de excedentes alimentares de hortas caseiras. O projeto foi pensado para o município da Lousã, com foco na sustentabilidade, economia local e consumo de proximidade.",
+            text: "A RETEX Portugal é uma empresa focada na recolha, reutilização e valorização sustentável de têxteis usados, promovendo a economia circular. A minha colaboração surgiu no contexto de um bootcamp, num momento em que a marca procurava melhorar a sua presença digital e repensar a experiência da sua plataforma.",
         },
         {
             id: "objetivo",
             title: "O Objetivo.",
-            text: "O principal objetivo foi criar uma plataforma web que permitisse a compra, venda e troca de produtos alimentares locais entre produtores e consumidores. Procurámos desenvolver uma solução intuitiva, acessível e alinhada com as necessidades reais da comunidade, reduzindo o desperdício alimentar e promovendo alternativas mais sustentáveis aos supermercados tradicionais.",
+            text: "O principal objetivo foi redesenhar a interface da plataforma, tornando-a mais intuitiva, clara e visualmente consistente com a identidade da marca. Em paralelo, passei também a contribuir para a gestão e criação de conteúdos para as redes sociais da RETEX, reforçando a sua comunicação digital.",
         },
         {
             id: "processo",
             title: "O Processo.",
-            text: "O projeto passou por várias fases de pesquisa, definição de funcionalidades, prototipagem de interface e desenvolvimento iterativo. A aplicação foi construída com HTML, CSS, Bootstrap, JavaScript, PHP e MySQL, integrando sistemas de mensagens, notificações, favoritos, encomendas com estados e um mapa interativo para explorar anúncios por localização.",
+            text: "O trabalho começou com a análise da interface existente e com a identificação de aspetos a melhorar ao nível da usabilidade, da hierarquia visual e da organização da informação. A partir dessa análise, foi desenvolvida uma nova proposta de interface para a plataforma. Numa fase posterior, acompanhei também a gestão das redes sociais, participando na criação de conteúdos e no desenvolvimento de uma comunicação visual mais consistente para a marca.",
         },
         {
-            id: "resultado",
-            title: "O Resultado.",
-            text: "O resultado final foi uma aplicação funcional que permite anunciar produtos, comunicar diretamente entre utilizadores, acompanhar o estado das encomendas e visualizar os anúncios em mapa. Para além da solução técnica, o projeto reforçou competências em UX/UI, desenvolvimento web full-stack e criação de soluções digitais orientadas para problemas reais com impacto social.",
+            id: "estado",
+            title: "O Estado Atual.",
+            text: "O redesign da interface encontra-se atualmente em fase de implementação, pelo que a versão final da plataforma ainda não pode ser apresentada. Já o trabalho desenvolvido nas redes sociais permitiu criar conteúdos mais consistentes, reforçar a identidade visual da marca e consolidar a sua presença digital.",
         },
     ]
 
@@ -50,21 +47,20 @@ function Nabu() {
                 <div className="project-hero-inner">
                     <div className="project-hero-copy">
                         <p className="about-label">
-                            Projeto Académico · UX/UI Design · Full-Stack · 2025
+                            Contexto de Bootcamp · UX/UI Design | Gestão de Redes Sociais · 2025
                         </p>
 
                         <h1 className="project-title">RETEX Portugal</h1>
 
                         <p className="project-description">
-                            Plataforma web para compra, venda e troca de excedentes alimentares
-                            locais, promovendo sustentabilidade, proximidade e consumo consciente.
+                            Projeto focado no redesign da interface da plataforma RETEX e na gestão e criação de conteúdos para redes sociais, com o objetivo de melhorar a experiência digital e reforçar a comunicação da marca.
                         </p>
                     </div>
 
                     <div className="project-hero-image-card">
                         <img
-                            src={nabuScreen1}
-                            alt="Mockup do projeto NABU"
+                            src={retexLogo}
+                            alt="Logótipo da RETEX Portugal"
                             className="project-hero-image"
                         />
                     </div>
@@ -96,8 +92,8 @@ function Nabu() {
                         {section.id === "objetivo" && (
                             <article className="project-inline-image-row">
                                 <img
-                                    src={nabuScreen2}
-                                    alt="Interface e layouts do projeto NABU"
+                                    src={retexScreen}
+                                    alt="Proposta de interface desenvolvida para a RETEX"
                                     className="project-inline-image bo"
                                 />
                             </article>
@@ -126,8 +122,34 @@ function Nabu() {
                     ))}
                 </div>
             </section>
+
+            <section className="container project-social-footer">
+                <p className="section-tag">Redes Sociais da Marca</p>
+
+                <div className="project-social-footer-links">
+                    <a
+                        href="https://www.instagram.com/retexportugal/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-social-footer-link"
+                        aria-label="Instagram da RETEX"
+                    >
+                        <FiInstagram />
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/company/retex-portugal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-social-footer-link"
+                        aria-label="LinkedIn da RETEX"
+                    >
+                        <FiLinkedin />
+                    </a>
+                </div>
+            </section>
         </main>
     )
 }
 
-export default Nabu
+export default Retex
