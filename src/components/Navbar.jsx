@@ -8,9 +8,9 @@ function Navbar() {
 
                 <nav>
                     <ul className="nav-links">
-                        <li><Link to="/about">about</Link></li>
-                        <li><Link to="/work">work</Link></li>
-                        <li><Link to="/contact">contact</Link></li>
+                        <li><Link to="/about">sobre mim.</Link></li>
+                        <li><Link to="/work">projetos.</Link></li>
+                        <li><Link to="/contact">contactos.</Link></li>
                     </ul>
                 </nav>
             </div>

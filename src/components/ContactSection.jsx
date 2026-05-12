@@ -2,7 +2,6 @@ function ContactSection() {
     return (
         <section className="contact-section">
             <div className="container contact-inner">
-                <p className="contact-eyebrow">Vamos falar?</p>
 
                 <h2 className="contact-title">
                     Vamos entrar em contacto

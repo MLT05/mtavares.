@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom"
 import fotohome from "../assets/FOTOGRAFIAS MINHAS/IMG_5872.JPG"
 import photo2 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_PORTO.jpeg"
 import photo3 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_UNI.JPG"
 import photo4 from "../assets/FOTOGRAFIAS MINHAS/IMG_0500.jpeg"
 import photo5 from "../assets/FOTOGRAFIAS MINHAS/IMG_1449.jpeg"
-
 
 function Hero() {
     return (
@@ -15,11 +15,12 @@ function Hero() {
                     </h1>
 
                     <p className="about-hero-body">
-                        I’m a multimedia designer focused on UI/UX and web design,
-                        interested in creating digital experiences that feel clear,
-                        organized and human. I care about structure, small decisions and
-                        how people actually move through an interface.
+                        Aqui encontras uma seleção do meu trabalho em UX, desenvolvimento web e gestão de redes sociais. Cada projeto mostra uma parte diferente do processo.
                     </p>
+
+                    <Link to="/about" className="about-hero-button">
+                        Sobre mim
+                    </Link>
                 </div>
 
                 <div className="about-hero-photos about-hero-mosaic">
@@ -42,7 +43,6 @@ function Hero() {
                     <div className="about-mosaic-item about-mosaic-5">
                         <img src={photo5} alt="Mariana photo 5" />
                     </div>
-
                 </div>
             </div>
         </section>
