@@ -11,6 +11,8 @@ function Navbar() {
                         <li><Link to="/about">sobre mim.</Link></li>
                         <li><Link to="/work">projetos.</Link></li>
                         <li><Link to="/contact">contactos.</Link></li>
+                        <li><Link to="/contact">contactos.</Link></li>
+
                     </ul>
                 </nav>
             </div>

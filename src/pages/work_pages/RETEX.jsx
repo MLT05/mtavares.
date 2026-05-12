@@ -37,7 +37,11 @@ function Retex() {
         {
             id: "estado",
             title: "O Estado Atual.",
-            text: "O redesign da interface encontra-se atualmente em fase de implementação, pelo que a versão final da plataforma ainda não pode ser apresentada. Já o trabalho desenvolvido nas redes sociais permitiu criar conteúdos mais consistentes, reforçar a identidade visual da marca e consolidar a sua presença digital.",
+            text: (
+                <>
+                    O redesign da interface encontra-se atualmente <strong>em fase de implementação</strong>, pelo que a versão final da plataforma ainda não pode ser apresentada. Já o trabalho desenvolvido nas redes sociais permitiu criar conteúdos mais consistentes, reforçar a identidade visual da marca e consolidar a sua presença digital.
+                </>
+            ),
         },
     ]
 
@@ -47,14 +51,13 @@ function Retex() {
                 <div className="project-hero-inner">
                     <div className="project-hero-copy">
                         <p className="about-label">
-                            Contexto de Bootcamp · UX/UI Design | Gestão de Redes Sociais · 2025
+                            Colaboração · UX/UI Design | Gestão de Redes Sociais · 2025
                         </p>
 
                         <h1 className="project-title">RETEX Portugal</h1>
 
                         <p className="project-description">
-                            Projeto focado no redesign da interface da plataforma RETEX e na gestão e criação de conteúdos para redes sociais, com o objetivo de melhorar a experiência digital e reforçar a comunicação da marca.
-                        </p>
+                            Plataforma que revoluciona a forma como lidamos com o desperdício têxtil. Tornamos a reutilização de têxtil mais simples, conveniente e eficiente, através de um modelo de recolha inovador e um compromisso real com a economia circular.                        </p>
                     </div>
 
                     <div className="project-hero-image-card">
