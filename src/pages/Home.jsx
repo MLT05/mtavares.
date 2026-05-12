@@ -12,12 +12,11 @@ function Home() {
             <section className="featured-work">
                 <div className="container">
                     <div className="section-top">
-                        <p className="section-tag">Work</p>
-                        <Link to="/work" className="section-link">See all</Link>
+                        <h2 className="about-hero-title">Alguns dos meus projetos.</h2>
                     </div>
 
                     <div className="home-work-grid">
-                        {recentProjects.map((project) => (
+                    {recentProjects.map((project) => (
                             <Link
                                 to={`/work/${project.slug}`}
                                 className="home-work-card-link"
@@ -40,11 +39,18 @@ function Home() {
                                         <h3>{project.title}</h3>
                                         <p>{project.description}</p>
                                     </div>
+
                                 </article>
+
                             </Link>
+
                         ))}
                     </div>
+                    <Link to="/work" className="home-work-more-button">
+                        Ver mais
+                    </Link>
                 </div>
+
             </section>
 
 

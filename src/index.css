@@ -276,6 +276,26 @@ img {
   line-height: 1.6;
   color: #5f5850;
 }
+.home-work-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 32px auto 100px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #1e1e1e;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.home-work-more-button:hover {
+  background: #000000;
+  transform: translateY(-2px);
+}
 
 .home-about-preview {
   padding: 72px 0 90px;
@@ -307,7 +327,7 @@ img {
 .work-page {
   position: relative;
   z-index: 2;
-  padding: 72px 0 90px;
+  padding: 20px 0 90px;
 }
 
 .work-page-title {
@@ -421,7 +441,7 @@ img {
 .about-hero {
   position: relative;
   z-index: 1;
-  padding: 10px 0 40px;
+  padding: 10px 0 10px;
 }
 
 .about-hero-tags {
@@ -476,6 +496,8 @@ img {
   grid-template-columns: minmax(0, 1.1fr) minmax(380px, 520px);
   gap: 56px;
   align-items: center;
+  margin-bottom: 60px;
+  margin-top: 50px;
 }
 
 .about-hero-text {
@@ -500,6 +522,10 @@ img {
   font-size: 17px;
   line-height: 1.7;
   color: #6b645c;
+}
+.about-photo {
+  width: 100%;
+  height: 100%;
 }
 
 .about-hero-photos {

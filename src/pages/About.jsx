@@ -12,8 +12,14 @@ import foto12 from "../assets/FOTOGRAFIAS MINHAS/eu_3.jpeg"
 import foto13 from "../assets/FOTOS_AMAIS/gatinhos.jpeg"
 import foto14 from "../assets/FOTOS_AMAIS/girassol.jpg"
 import foto15 from "../assets/Group 24.svg"
+import fotohome from "../assets/FOTOGRAFIAS MINHAS/IMG_5872.JPG"
+import photo2 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_PORTO.jpeg"
+import photo3 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_UNI.JPG"
+import photo4 from "../assets/FOTOGRAFIAS MINHAS/IMG_0500.jpeg"
+import photo5 from "../assets/FOTOGRAFIAS MINHAS/IMG_1449.jpeg"
 
 function About() {
+
     const carouselImages = [
         foto1,
         foto2,
@@ -125,7 +131,7 @@ function About() {
                     </div>
 
                     <div className="about-hero-photos">
-                        <div className="about-photo about-photo-main">
+                        <div className="about-photo">
                             <img src={foto15} alt="Retrato da Mariana"/>
                         </div>
                     </div>

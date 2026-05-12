@@ -1,7 +1,7 @@
 import hortarandaImg from "../assets/NABU/Captura de ecrã 2026-05-08, às 18.56.07 1.svg"
 import nabuImg from "../assets/NABU/Captura de ecrã 2026-05-08, às 18.56.07 1.svg"
-import tutsImg from "../assets/NABU/Captura de ecrã 2026-05-08, às 18.56.07 1.svg"
-import retexImg from "../assets/RETEX/mockup_frente_retex.png"
+import tutsImg from "../assets/TUTS/tuts_logo.png"
+import retexImg from "../assets/RETEX/RETEX_LOGO.svg"
 
 const projectsData = [
     {

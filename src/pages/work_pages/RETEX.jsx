@@ -1,4 +1,4 @@
-import nabuScreen1 from "../../assets/NABU/NABU_2.png"
+import nabuScreen1 from "../../assets/RETEX/RETEX_LOGO.svg"
 import nabuScreen2 from "../../assets/NABU/nabu-phones.jpg"
 
 
@@ -53,7 +53,7 @@ function Nabu() {
                             Projeto Académico · UX/UI Design · Full-Stack · 2025
                         </p>
 
-                        <h1 className="project-title">NABU</h1>
+                        <h1 className="project-title">RETEX Portugal</h1>
 
                         <p className="project-description">
                             Plataforma web para compra, venda e troca de excedentes alimentares

@@ -1,11 +1,24 @@
 import { Link } from "react-router-dom"
 import projectsData from "../data/projectsData"
+import foto15 from "../assets/Group 24.svg";
 
 function Work() {
     return (
         <main className="work-page">
+            <section className="container about-hero">
+                <div className="about-hero-inner">
+                    <div className="about-hero-text">
+                        <p className="about-label">projetos.</p>
+
+                        <h2 className="about-hero-title">
+                            Os meus projetos.
+                        </h2>
+
+                    </div>
+                </div>
+            </section>
+
             <div className="container">
-                <h1 className="about-label">Work</h1>
 
                 <div className="work-showcase-grid">
                     {projectsData.map((project) => (

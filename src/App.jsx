@@ -1,6 +1,5 @@
 import { Routes, Route, Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar.jsx"
-import BackButton from "./components/BackButton.jsx"
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
 import Work from "./pages/Work.jsx"
@@ -12,16 +11,7 @@ import Hortaranda from "./pages/work_pages/HORTARANDA.jsx"
 import Footer from "./components/Footer.jsx"
 import ContactSection from "./components/ContactSection.jsx"
 
-function InnerLayout() {
-    return (
-        <>
-            <div className="container">
-                <BackButton />
-            </div>
-            <Outlet />
-        </>
-    )
-}
+
 
 function App() {
     return (
@@ -30,8 +20,6 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
-
-                <Route element={<InnerLayout />}>
                     <Route path="/about" element={<About />} />
                     <Route path="/work" element={<Work />} />
                     <Route path="/contact" element={<Contact />} />
@@ -40,7 +28,6 @@ function App() {
                     <Route path="/work/tuts" element={<Tuts />} />
                     <Route path="/work/retex" element={<Retex />} />
                     <Route path="/work/hortaranda" element={<Hortaranda />} />
-                </Route>
             </Routes>
 
             <ContactSection />
