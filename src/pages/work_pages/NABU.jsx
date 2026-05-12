@@ -35,7 +35,11 @@ function Nabu() {
         {
             id: "processo",
             title: "O Processo.",
-            text: "O projeto passou por várias fases de pesquisa, definição de funcionalidades, prototipagem de interface e desenvolvimento iterativo. A aplicação foi construída com HTML, CSS, Bootstrap, JavaScript, PHP e MySQL, integrando sistemas de mensagens, notificações, favoritos, encomendas com estados e um mapa interativo para explorar anúncios por localização.",
+            text: (
+                <>
+                    O projeto passou por várias fases de pesquisa, definição de funcionalidades, prototipagem de interface e desenvolvimento iterativo. A aplicação foi construída com <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> e <strong>MySQL</strong>, integrando sistemas de mensagens, notificações, favoritos, encomendas com estados e um mapa interativo para explorar anúncios por localização.
+                </>
+            ),
         },
         {
             id: "resultado",
@@ -50,7 +54,7 @@ function Nabu() {
                 <div className="project-hero-inner">
                     <div className="project-hero-copy">
                         <p className="about-label">
-                            Projeto Académico · UX/UI Design · Full-Stack · 2025
+                            Projeto Académico · UX/UI Designer & Developer · 2024
                         </p>
 
                         <h1 className="project-title">NABU</h1>

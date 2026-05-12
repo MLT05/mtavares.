@@ -37,7 +37,7 @@ function Home() {
 
                                     <div className="home-work-content">
                                         <span className="home-work-meta">{project.meta}</span>
-                                        <h2>{project.title}</h2>
+                                        <h3>{project.title}</h3>
                                         <p>{project.description}</p>
                                     </div>
                                 </article>
@@ -46,6 +46,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+
 
         </main>
     )

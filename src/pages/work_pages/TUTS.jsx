@@ -1,61 +1,50 @@
-import nabuLogo from "../../assets/NABU/Captura de ecrã 2026-05-08, às 18.56.07 1.svg"
-import nabuScreen1 from "../../assets/NABU/mockup_nabu.png"
-import nabuScreen2 from "../../assets/NABU/NABU_2.png"
-import nabuScreen3 from "../../assets/NABU/Captura de ecrã 2026-05-08, às 18.56.07 1.svg"
+import nabuScreen1 from "../../assets/NABU/NABU_2.png"
+import nabuScreen2 from "../../assets/NABU/nabu-phones.jpg"
+
+
+import carlosImg from "../../assets/NABU/Group 4.png"
+import franciscoImg from "../../assets/NABU/Group 2.png"
+import marianaImg from "../../assets/NABU/Group 3.png"
+import mariaImg from "../../assets/NABU/Group 4.png"
+import gilImg from "../../assets/NABU/Group 4.png"
 
 function Nabu() {
-    const galleryImages = [
-        {
-            id: "nabu-1",
-            src: nabuScreen1,
-            alt: "Mockup principal do projeto NABU",
-            className: "project-image-1",
-        },
-        {
-            id: "nabu-2",
-            src: nabuScreen2,
-            alt: "Interface do projeto NABU",
-            className: "project-image-2",
-        },
-        {
-            id: "nabu-3",
-            src: nabuScreen3,
-            alt: "Identidade visual do projeto NABU",
-            className: "project-image-3",
-        },
+    const projectMeta = [
+        { id: "year", label: "Ano", value: "2025" },
+        { id: "role", label: "O Meu Papel", value: "UX/UI Design · Desenvolvimento" },
+        { id: "team", label: "Equipa", value: "4 elementos" },
     ]
 
-    const process = [
+    const teamMembers = [
+        { id: "carlos", name: "Carlos Teixeira", image: carlosImg },
+        { id: "francisco", name: "Francisco Seabra", image: franciscoImg },
+        { id: "mariana", name: "Mariana Tavares", image: marianaImg },
+        { id: "maria", name: "Maria Leonor Frias", image: mariaImg },
+        { id: "gil", name: "Gil Almeida", image: gilImg },
+
+    ]
+
+    const caseSections = [
         {
             id: "contexto",
-            title: "Contexto",
-            text: "No âmbito da unidade curricular de Bases de Dados e Tecnologias Server-side, fui desafiada, em equipa, a desenvolver uma aplicação web funcional para o município da Lousã que promovesse a sustentabilidade e a economia local. A partir do problema do desperdício de excedentes de hortas caseiras, nasceu a NABU, uma plataforma digital que liga produtores e consumidores locais em torno de práticas de consumo mais conscientes.",
+            title: "O Contexto.",
+            text: "No âmbito da unidade curricular de Bases de Dados e Tecnologias Server-side, desenvolvemos a NABU como resposta ao problema do desperdício de excedentes alimentares de hortas caseiras. O projeto foi pensado para o município da Lousã, com foco na sustentabilidade, economia local e consumo de proximidade.",
         },
         {
             id: "objetivo",
-            title: "Objetivo",
-            text: "O principal objetivo da NABU foi criar uma solução web que permitisse a compra, venda e troca de excedentes alimentares locais, reduzindo o desperdício e facilitando o acesso a produtos frescos e biológicos. Paralelamente, procurámos desenvolver uma experiência intuitiva e acessível, alinhada com as necessidades de agricultores e pequenos produtores da região da Lousã.",
+            title: "O Objetivo.",
+            text: "O principal objetivo foi criar uma plataforma web que permitisse a compra, venda e troca de produtos alimentares locais entre produtores e consumidores. Procurámos desenvolver uma solução intuitiva, acessível e alinhada com as necessidades reais da comunidade, reduzindo o desperdício alimentar e promovendo alternativas mais sustentáveis aos supermercados tradicionais.",
         },
         {
             id: "processo",
-            title: "Processo",
-            text: "O projeto passou por várias fases de pesquisa, definição de requisitos, prototipagem de interface e desenvolvimento iterativo em HTML, CSS, Bootstrap, JavaScript, PHP e MySQL. Ao longo do processo, estruturámos uma base de dados relacional, implementámos funcionalidades dinâmicas com AJAX (mensagens, notificações, geolocalização) e aplicámos boas práticas de segurança e organização de código para garantir uma aplicação estável e escalável.",
+            title: "O Processo.",
+            text: "O projeto passou por várias fases de pesquisa, definição de funcionalidades, prototipagem de interface e desenvolvimento iterativo. A aplicação foi construída com HTML, CSS, Bootstrap, JavaScript, PHP e MySQL, integrando sistemas de mensagens, notificações, favoritos, encomendas com estados e um mapa interativo para explorar anúncios por localização.",
         },
         {
             id: "resultado",
-            title: "Resultado",
-            text: "O resultado foi uma aplicação web funcional que permite publicar anúncios de produtos, comunicar diretamente entre comprador e vendedor, acompanhar encomendas, guardar favoritos e explorar anúncios num mapa interativo com base na localização. Para além do impacto social e ambiental potencial, o projeto consolidou competências técnicas e de UX, reforçando a minha capacidade de conceber e desenvolver soluções digitais orientadas para problemas reais.",
+            title: "O Resultado.",
+            text: "O resultado final foi uma aplicação funcional que permite anunciar produtos, comunicar diretamente entre utilizadores, acompanhar o estado das encomendas e visualizar os anúncios em mapa. Para além da solução técnica, o projeto reforçou competências em UX/UI, desenvolvimento web full-stack e criação de soluções digitais orientadas para problemas reais com impacto social.",
         },
-    ]
-
-    const tools = [
-        { id: "HTML", name: "HTML" },
-        { id: "CSS", name: "CSS" },
-        { id: "Bootstrap", name: "Bootstrap" },
-        { id: "Javascript", name: "Javascript" },
-        { id: "PHP", name: "PHP" },
-        { id: "MYSQL", name: "MYSQL" },
-
     ]
 
     return (
@@ -63,68 +52,80 @@ function Nabu() {
             <section className="container project-hero">
                 <div className="project-hero-inner">
                     <div className="project-hero-copy">
-                        <p className="about-label"> Projeto Curricular · UX/UI Design · 2025</p>
-                        <h1 className="project-title">NABU</h1>
+                        <p className="about-label">
+                            Projeto Académico · UX/UI Design · Full-Stack · 2025
+                        </p>
+
+                        <h1 className="project-title">Tut'S</h1>
+
                         <p className="project-description">
-                            Um conceito de organização doméstica e planeamento com foco em
-                            simplicidade, clareza e utilidade.
+                            Plataforma web para compra, venda e troca de excedentes alimentares
+                            locais, promovendo sustentabilidade, proximidade e consumo consciente.
                         </p>
                     </div>
 
-                    <div className="project-logo-box">
+                    <div className="project-hero-image-card">
                         <img
-                            src={nabuLogo}
-                            alt="Logo do projeto NABU"
-                            className="project-logo"
+                            src={nabuScreen1}
+                            alt="Mockup do projeto NABU"
+                            className="project-hero-image"
                         />
                     </div>
                 </div>
-            </section>
 
-            <section className="project-slider-section">
-                <div className="container">
-                    <div className="section-top">
-                        <p className="section-tag">Imagens do projeto</p>
-                    </div>
-
-                    <div className="project-mosaic-grid">
-                        {galleryImages.map((image) => (
-                            <div
-                                className={`project-image-frame ${image.className}`}
-                                key={image.id}
-                            >
-                                <img src={image.src} alt={image.alt} />
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            <section className="container project-process-section">
-                <div className="section-top">
-                    <p className="section-tag">Processo</p>
-                </div>
-
-                <div className="project-process-grid">
-                    {process.map((item) => (
-                        <article className="project-process-card" key={item.id}>
-                            <h2>{item.title}</h2>
-                            <p>{item.text}</p>
-                        </article>
+                <div className="project-meta-grid">
+                    {projectMeta.map((item) => (
+                        <div className="project-meta-item" key={item.id}>
+                            <span>{item.label}</span>
+                            <strong>{item.value}</strong>
+                        </div>
                     ))}
                 </div>
             </section>
 
-            <section className="container project-tools-section">
+            <section className="container project-text-section">
+                {caseSections.map((section) => (
+                    <div key={section.id}>
+                        <article className="project-text-row">
+                            <div className="project-text-title">
+                                <h2>{section.title}</h2>
+                            </div>
+
+                            <div className="project-text-content">
+                                <p className="project-description">{section.text}</p>
+                            </div>
+                        </article>
+
+                        {section.id === "objetivo" && (
+                            <article className="project-inline-image-row">
+                                <img
+                                    src={nabuScreen2}
+                                    alt="Interface e layouts do projeto NABU"
+                                    className="project-inline-image bo"
+                                />
+                            </article>
+                        )}
+                    </div>
+                ))}
+            </section>
+
+            <section className="container project-team-section">
                 <div className="section-top">
-                    <p className="section-tag">Ferramentas utilizadas</p>
+                    <p className="section-tag">Equipa</p>
                 </div>
 
-                <div className="project-tools-list">
-                    {tools.map((tool) => (
-                        <span className="project-tool-pill" key={tool.id}>
-              {tool.name}
-            </span>
+                <div className="project-team-grid">
+                    {teamMembers.map((member) => (
+                        <div className="project-team-member" key={member.id}>
+                            <div className="project-team-circle">
+                                <img
+                                    src={member.image}
+                                    alt={member.name}
+                                    className="project-team-photo"
+                                />
+                            </div>
+                            <p className="project-team-name">{member.name}</p>
+                        </div>
                     ))}
                 </div>
             </section>
