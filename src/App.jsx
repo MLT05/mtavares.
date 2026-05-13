@@ -11,7 +11,7 @@ import Retex from "./pages/work_pages/RETEX.jsx"
 import Hortaranda from "./pages/work_pages/HORTARANDA.jsx"
 import Footer from "./components/Footer.jsx"
 import ContactSection from "./components/ContactSection.jsx"
-import useScrollReveal from "./hooks/useScrollReveal..js"
+import useScrollReveal from "./hooks/useScrollReveal.js"
 
 function ScrollToTop() {
     const { pathname } = useLocation()
@@ -23,23 +23,7 @@ function ScrollToTop() {
     }, [])
 
     useLayoutEffect(() => {
-        document.documentElement.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "instant",
-        })
-
-        document.body.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "instant",
-        })
-
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "instant",
-        })
+        window.scrollTo(0, 0)
     }, [pathname])
 
     return null
@@ -47,6 +31,28 @@ function ScrollToTop() {
 
 function AppContent() {
     useScrollReveal()
+
+    useEffect(() => {
+        const handleContextMenu = (e) => {
+            if (e.target.tagName === "IMG") {
+                e.preventDefault()
+            }
+        }
+
+        const handleDragStart = (e) => {
+            if (e.target.tagName === "IMG") {
+                e.preventDefault()
+            }
+        }
+
+        document.addEventListener("contextmenu", handleContextMenu)
+        document.addEventListener("dragstart", handleDragStart)
+
+        return () => {
+            document.removeEventListener("contextmenu", handleContextMenu)
+            document.removeEventListener("dragstart", handleDragStart)
+        }
+    }, [])
 
     return (
         <>

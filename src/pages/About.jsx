@@ -176,7 +176,7 @@ function About() {
             <section className="about-slider-section scroll-reveal scroll-reveal-delay-1">
                 <div className="container">
                     <div className="section-top">
-                        <p className="section-tag">Para além do design.</p>
+                        <p className="section-tag">Para além do design</p>
                     </div>
 
                     <div className="about-slider-dual">
@@ -205,7 +205,7 @@ function About() {
 
             <section className="container about-journey-section">
                 <div className="section-top scroll-reveal scroll-reveal-delay-1">
-                    <p className="section-tag">O meu percurso.</p>
+                    <p className="section-tag">O meu percurso</p>
                 </div>
 
                 <h2 className="about-section-title scroll-reveal scroll-reveal-delay-2">
@@ -229,7 +229,7 @@ function About() {
 
             <section className="container about-goals-section">
                 <div className="section-top scroll-reveal scroll-reveal-delay-1">
-                    <p className="section-tag">O que procuro.</p>
+                    <p className="section-tag">O que procuro</p>
                 </div>
 
                 <h2 className="about-section-title scroll-reveal scroll-reveal-delay-2">
