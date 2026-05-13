@@ -12,7 +12,7 @@ function Navbar() {
                         <li><Link to="/work">projetos.</Link></li>
                         <li>
                             <a
-                                href="https://drive.google.com/file/d/1TTEtog6l6nz2VpIGDJW7kTbDi7EC6-6n/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1n7_EZbCbp2V7kcmJQ7nLx1YrVSExglRQ/view?usp=share_link"
                                 download="Mariana-Tavares-CV.pdf"
                             >
                                 o meu cv.

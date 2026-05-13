@@ -22,17 +22,29 @@ function Retex() {
         {
             id: "contexto",
             title: "O Contexto.",
-            text: "A RETEX Portugal é uma empresa focada na recolha, reutilização e valorização sustentável de têxteis usados, promovendo a economia circular. A minha colaboração surgiu no contexto de um bootcamp, num momento em que a marca procurava melhorar a sua presença digital e repensar a experiência da sua plataforma.",
+            text: (
+                <>
+                    A <strong>RETEX Portugal</strong> é uma empresa focada na recolha, reutilização e valorização sustentável de têxteis usados, promovendo a economia circular. A minha colaboração surgiu no contexto de um bootcamp, num momento em que a marca procurava <strong>melhorar a sua presença digital e repensar a experiência da sua plataforma</strong>.
+                </>
+            ),
         },
         {
             id: "objetivo",
             title: "O Objetivo.",
-            text: "O principal objetivo foi redesenhar a interface da plataforma, tornando-a mais intuitiva, clara e visualmente consistente com a identidade da marca. Em paralelo, passei também a contribuir para a gestão e criação de conteúdos para as redes sociais da RETEX, reforçando a sua comunicação digital.",
+            text: (
+                <>
+                    O principal objetivo foi <strong>redesenhar a interface da plataforma</strong>, tornando-a mais intuitiva, clara e visualmente consistente com a identidade da marca. Em paralelo, passei também a contribuir para a <strong>gestão e criação de conteúdos para as redes sociais da RETEX</strong>, reforçando a sua comunicação digital.
+                </>
+            ),
         },
         {
             id: "processo",
             title: "O Processo.",
-            text: "O trabalho começou com a análise da interface existente e com a identificação de aspetos a melhorar ao nível da usabilidade, da hierarquia visual e da organização da informação. A partir dessa análise, foi desenvolvida uma nova proposta de interface para a plataforma. Numa fase posterior, acompanhei também a gestão das redes sociais, participando na criação de conteúdos e no desenvolvimento de uma comunicação visual mais consistente para a marca.",
+            text: (
+                <>
+                    O trabalho começou com a análise da interface existente e com a identificação de aspetos a melhorar ao nível da usabilidade, da hierarquia visual e da organização da informação. A partir dessa análise, foi desenvolvida uma <strong>nova proposta de interface para a plataforma</strong>. Numa fase posterior, acompanhei também a gestão das redes sociais, participando na criação de conteúdos e no desenvolvimento de uma <strong>comunicação visual mais consistente para a marca</strong>.
+                </>
+            ),
         },
         {
             id: "estado",

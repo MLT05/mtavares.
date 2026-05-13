@@ -23,22 +23,27 @@ function Footer() {
                         <span>E-mail</span>
                     </a>
 
-                    <a
-                        href="tel:+351910858043"
-                        className="footer-social"
-                        aria-label="Call Mariana Tavares"
-                    >
-                        <span>Phone</span>
-                    </a>
 
                     <a
-                        href="https://www.linkedin.com/in/marianaltavares/"
+                        href="
+"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="footer-social"
                         aria-label="Visit Mariana Tavares LinkedIn profile"
                     >
                         <span>LinkedIn</span>
+                    </a>
+
+                    <a
+                        href="
+"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-social"
+                        aria-label="Visit Mariana Tavares LinkedIn profile"
+                    >
+                        <span>GitHub</span>
                     </a>
                 </div>
             </div>

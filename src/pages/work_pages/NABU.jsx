@@ -25,26 +25,38 @@ function Nabu() {
         {
             id: "contexto",
             title: "O Contexto.",
-            text: "No âmbito da unidade curricular de Bases de Dados e Tecnologias Server-side, desenvolvemos a NABU como resposta ao problema do desperdício de excedentes alimentares de hortas caseiras. O projeto foi pensado para o município da Lousã, com foco na sustentabilidade, economia local e consumo de proximidade.",
+            text: (
+                <>
+                    No âmbito da unidade curricular de Bases de Dados e Tecnologias Server-side, desenvolvemos a <strong>NABU</strong> como resposta ao <strong>problema do desperdício de excedentes alimentares de hortas caseiras</strong>. O projeto foi pensado para o município da Lousã, com foco na sustentabilidade, economia local e consumo de proximidade.
+                </>
+            ),
         },
         {
             id: "objetivo",
             title: "O Objetivo.",
-            text: "O principal objetivo foi criar uma plataforma web que permitisse a compra, venda e troca de produtos alimentares locais entre produtores e consumidores. Procurámos desenvolver uma solução intuitiva, acessível e alinhada com as necessidades reais da comunidade, reduzindo o desperdício alimentar e promovendo alternativas mais sustentáveis aos supermercados tradicionais.",
+            text: (
+                <>
+                    O principal objetivo foi criar uma <strong>plataforma web que permitisse a compra, venda e troca de produtos alimentares locais entre produtores e consumidores</strong>. Procurámos desenvolver uma solução intuitiva, acessível e alinhada com as necessidades reais da comunidade, reduzindo o desperdício alimentar e promovendo <strong>alternativas mais sustentáveis aos supermercados tradicionais</strong>.
+                </>
+            ),
         },
         {
             id: "processo",
             title: "O Processo.",
             text: (
                 <>
-                    O projeto passou por várias fases de pesquisa, definição de funcionalidades, prototipagem de interface e desenvolvimento iterativo. A aplicação foi construída com <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> e <strong>MySQL</strong>, integrando sistemas de mensagens, notificações, favoritos, encomendas com estados e um mapa interativo para explorar anúncios por localização.
+                    O projeto passou por várias fases de pesquisa, definição de funcionalidades, prototipagem de interface e desenvolvimento iterativo. A aplicação foi construída com <strong>HTML</strong>, <strong>CSS</strong>, <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> e <strong>MySQL</strong>, integrando <strong>sistemas de mensagens, notificações, favoritos, encomendas com estados e um mapa interativo</strong> para explorar anúncios por localização.
                 </>
             ),
         },
         {
             id: "resultado",
             title: "O Resultado.",
-            text: "O resultado final foi uma aplicação funcional que permite anunciar produtos, comunicar diretamente entre utilizadores, acompanhar o estado das encomendas e visualizar os anúncios em mapa. Para além da solução técnica, o projeto reforçou competências em UX/UI, desenvolvimento web full-stack e criação de soluções digitais orientadas para problemas reais com impacto social.",
+            text: (
+                <>
+                    O resultado final foi uma <strong>aplicação funcional</strong> que permite anunciar produtos, comunicar diretamente entre utilizadores, acompanhar o estado das encomendas e visualizar os anúncios em mapa. Para além da solução técnica, o projeto reforçou competências em <strong>UX/UI, desenvolvimento web full-stack e criação de soluções digitais orientadas para problemas reais com impacto social</strong>.
+                </>
+            ),
         },
     ]
 
@@ -54,7 +66,7 @@ function Nabu() {
                 <div className="project-hero-inner">
                     <div className="project-hero-copy">
                         <p className="about-label">
-                            Projeto Académico · UX/UI Designer & Developer · 2024
+                            Projeto Académico · UX/UI Designer & Developer · 2025
                         </p>
 
                         <div className="project-title-row">
@@ -126,6 +138,21 @@ function Nabu() {
                         )}
                     </div>
                 ))}
+            </section>
+
+            <section className="container project-figma-section scroll-reveal scroll-reveal-delay-2">
+                <div className="section-top">
+                    <p className="section-tag">Layout em Figma</p>
+                </div>
+
+                <div className="project-figma-embed">
+                    <iframe
+                        title="Layout NABU no Figma"
+                        src="https://embed.figma.com/design/A0yRM8HVgm7LjX3zG4t3z3/Nabu?node-id=0-1&m=dev&embed-host=share"
+                        className="project-figma-iframe"
+                        allowFullScreen
+                    />
+                </div>
             </section>
 
             <section className="container project-team-section scroll-reveal scroll-reveal-delay-2">

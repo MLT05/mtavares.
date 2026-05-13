@@ -49,22 +49,38 @@ function Tuts() {
         {
             id: "contexto",
             title: "O Contexto.",
-            text: "A Tut'S surge no âmbito do projeto final da Licenciatura em Multimédia e Tecnologias da Comunicação, na Universidade de Aveiro, desenvolvida em resposta a uma proposta do professor David Oliveira, nosso orientador. Inserido no contexto do ensino superior, o projeto parte da realidade de alunos que lidam diariamente com materiais dispersos, excesso de informação e uma forte exigência de autonomia no estudo. Embora os chatbots e outras ferramentas de IA generativa já façam parte destas rotinas, muitas das soluções atuais continuam a apresentar problemas de fiabilidade, falta de alinhamento com os conteúdos curriculares e riscos de uso pouco crítico da tecnologia.",
+            text: (
+                <>
+                    A <strong>Tut'S</strong> surge no âmbito do projeto final da Licenciatura em Multimédia e Tecnologias da Comunicação, na Universidade de Aveiro, desenvolvida em resposta a uma proposta do professor David Oliveira, nosso orientador. Inserido no contexto do ensino superior, o projeto parte da realidade de alunos que lidam diariamente com materiais dispersos, excesso de informação e uma forte exigência de autonomia no estudo. Embora os chatbots e outras ferramentas de IA generativa já façam parte destas rotinas, muitas das soluções atuais continuam a apresentar <strong>problemas de fiabilidade, falta de alinhamento com os conteúdos curriculares e riscos de uso pouco crítico da tecnologia</strong>.
+                </>
+            ),
         },
         {
             id: "objetivo",
             title: "O Objetivo.",
-            text: "O principal objetivo da Tut'S é criar uma plataforma de auto-tutoria com Inteligência Artificial orientada para apoiar o estudo autónomo no ensino superior. A proposta pretende centralizar conteúdos académicos, oferecer respostas mais fiáveis através de arquitetura RAG e promover uma experiência de aprendizagem mais personalizada, ética e ajustada às necessidades reais dos estudantes.",
+            text: (
+                <>
+                    O principal objetivo da Tut'S é criar uma <strong>plataforma de auto-tutoria com Inteligência Artificial orientada para apoiar o estudo autónomo no ensino superior</strong>. A proposta pretende centralizar conteúdos académicos, oferecer respostas mais fiáveis através de arquitetura RAG e promover uma experiência de aprendizagem mais personalizada, ética e ajustada às necessidades reais dos estudantes.
+                </>
+            ),
         },
         {
             id: "processo",
             title: "O Processo.",
-            text: "O processo iniciou-se com uma fase de pesquisa sobre o contexto do ensino superior, os hábitos de estudo dos alunos e o papel da Inteligência Artificial no apoio à aprendizagem. Paralelamente, foram analisadas soluções já existentes e realizadas entrevistas a docentes e estudantes, de forma a identificar necessidades concretas, limitações recorrentes e oportunidades relevantes para a construção da plataforma. Com base nesses insights, foram sendo definidos o conceito da solução, a sua proposta de valor, as funcionalidades prioritárias e os princípios orientadores da experiência. Em paralelo, desenvolveu-se também a identidade visual da Tut'S e iniciou-se a componente de desenvolvimento técnico da plataforma.",
+            text: (
+                <>
+                    O processo iniciou-se com uma fase de pesquisa sobre o contexto do ensino superior, os hábitos de estudo dos alunos e o papel da Inteligência Artificial no apoio à aprendizagem. Paralelamente, foram analisadas soluções já existentes e realizadas entrevistas a docentes e estudantes, de forma a identificar necessidades concretas, limitações recorrentes e oportunidades relevantes para a construção da plataforma. Com base nesses insights, foram sendo definidos o conceito da solução, a sua proposta de valor, as funcionalidades prioritárias e os princípios orientadores da experiência. Em paralelo, desenvolveu-se também a <strong>identidade visual da Tut'S e iniciou-se a componente de desenvolvimento técnico da plataforma</strong>.
+                </>
+            ),
         },
         {
             id: "resultado",
             title: "O Resultado.",
-            text: "Até ao momento, o projeto encontra-se em desenvolvimento, tendo sido já definida a construção visual da marca, o posicionamento conceptual e as bases da experiência da plataforma. A componente de desenvolvimento e implementação funcional continua em curso, acompanhando a evolução da investigação, da arquitetura do sistema e das decisões estratégicas do projeto.",
+            text: (
+                <>
+                    Até ao momento, o projeto encontra-se em desenvolvimento, tendo sido já definida a construção visual da marca, o posicionamento conceptual e as bases da experiência da plataforma. A <strong>componente de desenvolvimento e implementação funcional continua em curso</strong>, acompanhando a evolução da investigação, da arquitetura do sistema e das decisões estratégicas do projeto.
+                </>
+            ),
         },
     ]
 

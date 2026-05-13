@@ -11,6 +11,14 @@ import foto11 from "../assets/FOTOGRAFIAS MINHAS/eu_2.jpeg"
 import foto12 from "../assets/FOTOGRAFIAS MINHAS/eu_3.jpeg"
 import foto13 from "../assets/FOTOS_AMAIS/gatinhos.jpeg"
 import foto14 from "../assets/FOTOS_AMAIS/girassol.jpg"
+import foto16 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_CAFE.jpeg"
+import foto17 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_RIO.JPG"
+import foto18 from "../assets/FOTOGRAFIAS MINHAS/computador.jpeg"
+import foto19 from "../assets/FOTOGRAFIAS MINHAS/work.jpg"
+
+
+
+
 import foto15 from "../assets/Group 24.svg"
 import { FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi"
 
@@ -23,12 +31,16 @@ function About() {
         foto6,
         foto7,
         foto8,
+        foto18,
         foto9,
         foto10,
         foto11,
         foto12,
         foto13,
-        foto14
+        foto14,
+        foto16,
+        foto17,
+        foto19
     ]
 
     const goals = [
@@ -92,11 +104,6 @@ function About() {
         { id: 4, name: "PhpStorm", icon: "phpstorm" },
         { id: 5, name: "React", icon: "react" },
         { id: 6, name: "Firebase", icon: "firebase" },
-        { id: 7, name: "Postman", icon: "postman" },
-        { id: 8, name: "Google Drive", icon: "googledrive" },
-        { id: 9, name: "Google Docs", icon: "googledocs" },
-        { id: 10, name: "Google Meet", icon: "googlemeet" },
-        { id: 11, name: "Gmail", icon: "gmail" }
     ]
 
     return (
@@ -112,7 +119,7 @@ function About() {
 
                         <p className="about-hero-body">
                             Sou a <strong>Mariana Tavares</strong> e interesso-me por criatividade, inovação e trabalho
-                            em equipa, e valorizo a aprendizagem
+                            em equipa. Valorizo a aprendizagem
                             contínua em áreas ligadas ao design e ao digital.
                         </p>
 
@@ -245,7 +252,7 @@ function About() {
 
             <section className="container tools-section scroll-reveal scroll-reveal-delay-1">
                 <div className="section-top tools-top">
-                    <p className="section-tag">Ferramentas do meu processo de trabalho</p>
+                    <p className="section-tag">Ferramentas que utilizo</p>
                 </div>
 
                 <div className="tools-marquee">

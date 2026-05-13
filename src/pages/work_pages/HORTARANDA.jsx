@@ -24,26 +24,38 @@ function Hortaranda() {
         {
             id: "contexto",
             title: "O Contexto.",
-            text: "No âmbito da unidade curricular de Laboratório Multimédia 3, desenvolvemos o HORTARANDA como resposta à necessidade de promover a auto-sustentabilidade alimentar em contextos urbanos. O projeto foi pensado para pessoas que vivem em apartamentos e dispõem de pouco espaço exterior, como varandas, incentivando práticas mais sustentáveis e conscientes no dia a dia.",
+            text: (
+                <>
+                    No âmbito da unidade curricular de Laboratório Multimédia 3, desenvolvemos o <strong>HORTARANDA</strong> como resposta à necessidade de promover a <strong>auto-sustentabilidade alimentar em contextos urbanos</strong>. O projeto foi pensado para pessoas que vivem em apartamentos e dispõem de pouco espaço exterior, como varandas, incentivando práticas mais sustentáveis e conscientes no dia a dia.
+                </>
+            ),
         },
         {
             id: "objetivo",
             title: "O Objetivo.",
-            text: "O principal objetivo foi criar um website que permitisse aos utilizadores planear e construir hortas em espaços pequenos. Procurámos desenvolver uma solução acessível, intuitiva e educativa, capaz de ajudar na organização do cultivo doméstico, promover a produção alimentar em casa e reforçar hábitos alinhados com o Objetivo de Desenvolvimento Sustentável número 12.",
+            text: (
+                <>
+                    O principal objetivo foi criar um <strong>website que permitisse aos utilizadores planear e construir hortas em espaços pequenos</strong>. Procurámos desenvolver uma solução acessível, intuitiva e educativa, capaz de ajudar na organização do cultivo doméstico, promover a produção alimentar em casa e reforçar hábitos alinhados com o <strong>Objetivo de Desenvolvimento Sustentável número 12</strong>.
+                </>
+            ),
         },
         {
             id: "processo",
             title: "O Processo.",
             text: (
                 <>
-                    O projeto passou por duas fases principais: prototipagem e implementação. Após a definição do conceito, dos layouts e dos requisitos funcionais, desenvolvemos o website com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. A solução integrou um formulário inicial, simulador interativo, perfil com progresso ecológico, calendário de plantação e receitas sazonais. Ao longo do processo, utilizámos também ferramentas como <strong>ChatGPT</strong>, <strong>Copilot</strong>, <strong>W3Schools</strong>, <strong>YouTube</strong> e <strong>Bootstrap</strong> como apoio técnico à aprendizagem e desenvolvimento.
+                    O projeto passou por duas fases principais: <strong>prototipagem e implementação</strong>. Após a definição do conceito, dos layouts e dos requisitos funcionais, desenvolvemos o website com <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. A solução integrou um <strong>formulário inicial, simulador interativo, perfil com progresso ecológico, calendário de plantação e receitas sazonais</strong>. Ao longo do processo, utilizámos também ferramentas como <strong>ChatGPT</strong>, <strong>Copilot</strong>, <strong>W3Schools</strong>, <strong>YouTube</strong> e <strong>Bootstrap</strong> como apoio técnico à aprendizagem e desenvolvimento.
                 </>
             ),
         },
         {
             id: "resultado",
             title: "O Resultado.",
-            text: "O resultado final foi um website funcional e interativo que permite ao utilizador planear uma horta personalizada para a sua varanda, acompanhar práticas sustentáveis e explorar sugestões úteis ao longo do ano. Para além da solução técnica, o projeto reforçou competências em UX/UI, desenvolvimento front-end e criação de experiências digitais orientadas para impacto social e ambiental.",
+            text: (
+                <>
+                    O resultado final foi um <strong>website funcional e interativo</strong> que permite ao utilizador planear uma horta personalizada para a sua varanda, acompanhar práticas sustentáveis e explorar sugestões úteis ao longo do ano. Para além da solução técnica, o projeto reforçou competências em <strong>UX/UI, desenvolvimento front-end e criação de experiências digitais orientadas para impacto social e ambiental</strong>.
+                </>
+            ),
         },
     ]
 
@@ -68,7 +80,7 @@ function Hortaranda() {
                                     aria-label="GitHub do HORTARANDA"
                                     title="GitHub do HORTARANDA"
                                 >
-                                    <FiGithub/>
+                                    <FiGithub />
                                 </a>
                             </div>
                         </div>
@@ -123,7 +135,7 @@ function Hortaranda() {
                                             title="Vídeo promocional do HORTARANDA"
                                             className="project-video-embed"
                                             frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                                             allowFullScreen
                                         />
                                     </div>
@@ -132,6 +144,21 @@ function Hortaranda() {
                         )}
                     </div>
                 ))}
+            </section>
+
+            <section className="container project-figma-section scroll-reveal scroll-reveal-delay-2">
+                <div className="section-top">
+                    <p className="section-tag">Layout em Figma</p>
+                </div>
+
+                <div className="project-figma-embed">
+                    <iframe
+                        title="Layout HORTARANDA no Figma"
+                        src="https://embed.figma.com/design/mJ4YNPpmwf06z7dX3NRgkm/Hortaranda?node-id=2-228&m=dev&embed-host=share"
+                        className="project-figma-iframe"
+                        allowFullScreen
+                    />
+                </div>
             </section>
 
             <section className="container project-team-section scroll-reveal scroll-reveal-delay-2">
