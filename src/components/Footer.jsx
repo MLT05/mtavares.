@@ -5,8 +5,8 @@ function Footer() {
                 <div className="site-footer-left">
                     <p className="site-footer-signature">
                         <span className="site-footer-note">A portfolio (in progress) by</span>
-
                     </p>
+
                     <span className="site-footer-logo">mtavares.</span>
 
                     <p className="site-footer-note">
@@ -23,10 +23,8 @@ function Footer() {
                         <span>E-mail</span>
                     </a>
 
-
                     <a
-                        href="
-"
+                        href="https://www.linkedin.com/in/marianaltavares/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="footer-social"
@@ -36,12 +34,11 @@ function Footer() {
                     </a>
 
                     <a
-                        href="
-"
+                        href="https://github.com/MLT05"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="footer-social"
-                        aria-label="Visit Mariana Tavares LinkedIn profile"
+                        aria-label="Visit Mariana Tavares GitHub profile"
                     >
                         <span>GitHub</span>
                     </a>
