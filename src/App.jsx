@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
+import { useLayoutEffect } from "react"
 import Navbar from "./components/Navbar.jsx"
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
@@ -12,11 +13,22 @@ import Footer from "./components/Footer.jsx"
 import ContactSection from "./components/ContactSection.jsx"
 import useScrollReveal from "./hooks/useScrollReveal..js"
 
+function ScrollToTop() {
+    const { pathname } = useLocation()
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    }, [pathname])
+
+    return null
+}
+
 function AppContent() {
     useScrollReveal()
 
     return (
         <>
+            <ScrollToTop />
             <Navbar />
 
             <Routes>
