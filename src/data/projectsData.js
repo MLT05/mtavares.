@@ -17,7 +17,7 @@ const projectsData = [
         slug: "retex",
         meta: "GRAPHIC DESIGN @2025",
         title: "RETEX",
-        description: "Projeto visual focado em identidade, comunicação digital e presença visual para conteúdos musicais.",
+        description: "Plataforma que revoluciona a forma como lidamos com o desperdício têxtil.",
         image: retexImg,
         isNew: false,
         year: 2025,

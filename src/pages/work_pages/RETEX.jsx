@@ -84,9 +84,6 @@ function Retex() {
 
                         <p className="project-description">
                             Plataforma que revoluciona a forma como lidamos com o desperdício têxtil.
-                            Tornamos a reutilização de têxteis mais simples, conveniente e eficiente,
-                            através de um modelo de recolha inovador e de um compromisso real com a
-                            economia circular.
                         </p>
                     </div>
 
