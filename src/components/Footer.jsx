@@ -4,14 +4,14 @@ function Footer() {
             <div className="container site-footer-inner">
                 <div className="site-footer-left">
                     <p className="site-footer-signature">
-                        <span className="site-footer-note">A portfolio (in progress) by</span>
+                        <span className="site-footer-note">Designed and built by</span>
                     </p>
 
                     <span className="site-footer-logo">mtavares.</span>
+                </div>
 
-                    <p className="site-footer-note">
-                        Designed and built by Mariana Tavares.
-                    </p>
+                <div className="site-footer-center">
+                    <small className="site-footer-copy">© 2026 Mariana Tavares</small>
                 </div>
 
                 <div className="site-footer-right">
@@ -20,7 +20,7 @@ function Footer() {
                         className="footer-social"
                         aria-label="Send an email to Mariana Tavares"
                     >
-                        <span>E-mail</span>
+                        E-mail
                     </a>
 
                     <a
@@ -30,7 +30,7 @@ function Footer() {
                         className="footer-social"
                         aria-label="Visit Mariana Tavares LinkedIn profile"
                     >
-                        <span>LinkedIn</span>
+                        LinkedIn
                     </a>
 
                     <a
@@ -40,7 +40,7 @@ function Footer() {
                         className="footer-social"
                         aria-label="Visit Mariana Tavares GitHub profile"
                     >
-                        <span>GitHub</span>
+                        GitHub
                     </a>
                 </div>
             </div>
