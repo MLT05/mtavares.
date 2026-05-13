@@ -11,7 +11,7 @@ import Retex from "./pages/work_pages/RETEX.jsx"
 import Hortaranda from "./pages/work_pages/HORTARANDA.jsx"
 import Footer from "./components/Footer.jsx"
 import ContactSection from "./components/ContactSection.jsx"
-import useScrollReveal from "./hooks/useScrollReveal.js"
+import useScrollReveal from "./hooks/useScrollReveal..js"
 
 function ScrollToTop() {
     const { pathname } = useLocation()
