@@ -7,7 +7,7 @@ function Work() {
             <section className="container about-hero scroll-reveal scroll-reveal-delay-1">
                 <div className="about-hero-inner">
                     <div className="about-hero-text">
-                        <p className="about-label">projetos.</p>
+                        <p className="about-label">projetos</p>
                         <h2 className="about-hero-title">
                             Os meus projetos.
                         </h2>
