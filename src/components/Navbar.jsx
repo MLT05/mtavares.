@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-/*comentário tentar outra vez*/
+
 function Navbar() {
     return (
         <header className="navbar">
@@ -12,7 +12,7 @@ function Navbar() {
                         <li><Link to="/work">projetos.</Link></li>
                         <li>
                             <a
-                                href="/"
+                                href="https://drive.google.com/file/d/1TTEtog6l6nz2VpIGDJW7kTbDi7EC6-6n/view?usp=sharing"
                                 download="Mariana-Tavares-CV.pdf"
                             >
                                 o meu cv.
