@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-/*comentário*/
+/*comentário tentar outra vez*/
 function Navbar() {
     return (
         <header className="navbar">
