@@ -15,8 +15,7 @@ function Hero() {
                     </h1>
 
                     <p className="about-hero-body">
-                        Aqui encontras uma seleção do meu trabalho em UX, desenvolvimento web e gestão de redes sociais. Cada projeto mostra uma parte diferente do processo.
-                    </p>
+                        Aqui podes encontrar todos os meus trabalhos realizados na área de UX/UI e desenvolvimento web, bem como o processo de criação de cada um.                    </p>
 
                     <Link to="/about" className="about-hero-button">
                         Sobre mim

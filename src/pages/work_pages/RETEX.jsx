@@ -46,18 +46,48 @@ function Retex() {
     ]
 
     return (
-        <main className="project-page">
-            <section className="container project-hero">
+        <main className="project-page retex-page">
+            <section className="container project-hero scroll-reveal scroll-reveal-delay-1">
                 <div className="project-hero-inner">
                     <div className="project-hero-copy">
                         <p className="about-label">
-                            Colaboração · UX/UI Design | Gestão de Redes Sociais · 2025
+                            Colaboração · UX/UI Design · Gestão de Redes Sociais · 2025
                         </p>
 
-                        <h1 className="project-title">RETEX Portugal</h1>
+                        <div className="project-title-row">
+                            <h1 className="project-title">RETEX Portugal</h1>
+
+                            <div className="project-social-footer-links">
+                                <a
+                                    href="https://www.instagram.com/retexportugal/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-social-footer-link"
+                                    aria-label="Instagram da RETEX"
+                                    title="Instagram da RETEX"
+                                >
+                                    <FiInstagram aria-hidden="true" focusable="false" />
+                                </a>
+
+                                <a
+                                    href="https://www.linkedin.com/company/retex-portugal"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-social-footer-link"
+                                    aria-label="LinkedIn da RETEX"
+                                    title="LinkedIn da RETEX"
+                                >
+                                    <FiLinkedin aria-hidden="true" focusable="false" />
+                                </a>
+                            </div>
+                        </div>
 
                         <p className="project-description">
-                            Plataforma que revoluciona a forma como lidamos com o desperdício têxtil. Tornamos a reutilização de têxtil mais simples, conveniente e eficiente, através de um modelo de recolha inovador e um compromisso real com a economia circular.                        </p>
+                            Plataforma que revoluciona a forma como lidamos com o desperdício têxtil.
+                            Tornamos a reutilização de têxteis mais simples, conveniente e eficiente,
+                            através de um modelo de recolha inovador e de um compromisso real com a
+                            economia circular.
+                        </p>
                     </div>
 
                     <div className="project-hero-image-card">
@@ -69,7 +99,7 @@ function Retex() {
                     </div>
                 </div>
 
-                <div className="project-meta-grid">
+                <div className="project-meta-grid scroll-reveal scroll-reveal-delay-2">
                     {projectMeta.map((item) => (
                         <div className="project-meta-item" key={item.id}>
                             <span>{item.label}</span>
@@ -80,8 +110,11 @@ function Retex() {
             </section>
 
             <section className="container project-text-section">
-                {caseSections.map((section) => (
-                    <div key={section.id}>
+                {caseSections.map((section, index) => (
+                    <div
+                        key={section.id}
+                        className={`scroll-reveal scroll-reveal-delay-${(index % 3) + 1}`}
+                    >
                         <article className="project-text-row">
                             <div className="project-text-title">
                                 <h2>{section.title}</h2>
@@ -93,7 +126,7 @@ function Retex() {
                         </article>
 
                         {section.id === "objetivo" && (
-                            <article className="project-inline-image-row">
+                            <article className="project-inline-image-row scroll-reveal scroll-reveal-delay-2">
                                 <img
                                     src={retexScreen}
                                     alt="Proposta de interface desenvolvida para a RETEX"
@@ -105,7 +138,7 @@ function Retex() {
                 ))}
             </section>
 
-            <section className="container project-team-section">
+            <section className="container project-team-section scroll-reveal scroll-reveal-delay-2">
                 <div className="section-top">
                     <p className="section-tag">Equipa</p>
                 </div>
@@ -123,32 +156,6 @@ function Retex() {
                             <p className="project-team-name">{member.name}</p>
                         </div>
                     ))}
-                </div>
-            </section>
-
-            <section className="container project-social-footer">
-                <p className="section-tag">Redes Sociais da Marca</p>
-
-                <div className="project-social-footer-links">
-                    <a
-                        href="https://www.instagram.com/retexportugal/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-social-footer-link"
-                        aria-label="Instagram da RETEX"
-                    >
-                        <FiInstagram />
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/company/retex-portugal"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-social-footer-link"
-                        aria-label="LinkedIn da RETEX"
-                    >
-                        <FiLinkedin />
-                    </a>
                 </div>
             </section>
         </main>

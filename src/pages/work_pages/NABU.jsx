@@ -1,11 +1,11 @@
 import nabuScreen1 from "../../assets/NABU/NABU_2.png"
 import nabuScreen2 from "../../assets/NABU/nabu-phones.jpg"
 
-
 import carlosImg from "../../assets/NABU/Group 4.png"
 import franciscoImg from "../../assets/NABU/Group 2.png"
 import marianaImg from "../../assets/NABU/Group 3.png"
 import mariaImg from "../../assets/NABU/Group 4.png"
+import { FiGithub } from "react-icons/fi"
 
 function Nabu() {
     const projectMeta = [
@@ -49,15 +49,30 @@ function Nabu() {
     ]
 
     return (
-        <main className="project-page">
-            <section className="container project-hero">
+        <main className="project-page nabu-page">
+            <section className="container project-hero scroll-reveal scroll-reveal-delay-1">
                 <div className="project-hero-inner">
                     <div className="project-hero-copy">
                         <p className="about-label">
                             Projeto Académico · UX/UI Designer & Developer · 2024
                         </p>
 
-                        <h1 className="project-title">NABU</h1>
+                        <div className="project-title-row">
+                            <h1 className="project-title">NABU</h1>
+
+                            <div className="project-social-footer-links">
+                                <a
+                                    href="https://github.com/MLT05/NABU-24-25"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-social-footer-link"
+                                    aria-label="GitHub da NABU"
+                                    title="GitHub da NABU"
+                                >
+                                    <FiGithub />
+                                </a>
+                            </div>
+                        </div>
 
                         <p className="project-description">
                             Plataforma web para compra, venda e troca de excedentes alimentares
@@ -74,7 +89,7 @@ function Nabu() {
                     </div>
                 </div>
 
-                <div className="project-meta-grid">
+                <div className="project-meta-grid scroll-reveal scroll-reveal-delay-2">
                     {projectMeta.map((item) => (
                         <div className="project-meta-item" key={item.id}>
                             <span>{item.label}</span>
@@ -85,8 +100,11 @@ function Nabu() {
             </section>
 
             <section className="container project-text-section">
-                {caseSections.map((section) => (
-                    <div key={section.id}>
+                {caseSections.map((section, index) => (
+                    <div
+                        key={section.id}
+                        className={`scroll-reveal scroll-reveal-delay-${(index % 3) + 1}`}
+                    >
                         <article className="project-text-row">
                             <div className="project-text-title">
                                 <h2>{section.title}</h2>
@@ -98,7 +116,7 @@ function Nabu() {
                         </article>
 
                         {section.id === "objetivo" && (
-                            <article className="project-inline-image-row">
+                            <article className="project-inline-image-row scroll-reveal scroll-reveal-delay-2">
                                 <img
                                     src={nabuScreen2}
                                     alt="Interface e layouts do projeto NABU"
@@ -110,7 +128,7 @@ function Nabu() {
                 ))}
             </section>
 
-            <section className="container project-team-section">
+            <section className="container project-team-section scroll-reveal scroll-reveal-delay-2">
                 <div className="section-top">
                     <p className="section-tag">Equipa</p>
                 </div>

@@ -1,4 +1,4 @@
-import hortarandaImg from "../assets/HORTARANDA/LOGO_HORTA.png"
+import hortarandaImg from "../assets/HORTARANDA/Hortaranda_phone.png"
 import nabuImg from "../assets/NABU/phone_mockup.png"
 import tutsImg from "../assets/TUTS/mockup_tuts.svg"
 import retexImg from "../assets/RETEX/website.svg"
@@ -8,7 +8,7 @@ const projectsData = [
         slug: "tuts",
         meta: "WEB DESIGN @2026",
         title: "Tut'S",
-        description: "Website pensado para criar uma experiência de aprendizagem mais próxima, acessível e bem estruturada.",
+        description: "Plataforma de auto-tutoria com IA para apoio ao estudo autónomo no ensino superior, com foco em fiabilidade, personalização e ética.",
         image: tutsImg,
         isNew: true,
         year: 2026,
@@ -35,7 +35,7 @@ const projectsData = [
         slug: "hortaranda",
         meta: "UX/UI DESIGN & DEV @2023",
         title: "Hortaranda",
-        description: "Uma experiência digital repensada para oferecer uma navegação mais clara, intuitiva e envolvente.",
+        description: "Website interativo para planear hortas em varandas e promover práticas de auto-sustentabilidade alimentar em ambientes urbanos.",
         image: hortarandaImg,
         isNew: false,
         year: 2023,

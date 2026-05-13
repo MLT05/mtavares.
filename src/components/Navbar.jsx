@@ -10,9 +10,22 @@ function Navbar() {
                     <ul className="nav-links">
                         <li><Link to="/about">sobre mim.</Link></li>
                         <li><Link to="/work">projetos.</Link></li>
-                        <li><Link to="/contact">contactos.</Link></li>
-                        <li><Link to="/contact">contactos.</Link></li>
-
+                        <li>
+                            <a
+                                href="/"
+                                download="Mariana-Tavares-CV.pdf"
+                            >
+                                o meu cv.
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="mailto:marianalopestavares18@gmail.com"
+                                className="nav-contact-link"
+                            >
+                                contactar.
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

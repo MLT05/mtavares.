@@ -4,8 +4,7 @@ import projectsData from "../data/projectsData"
 function Work() {
     return (
         <main className="work-page">
-            {/* Secção de Cabeçalho */}
-            <section className="container about-hero">
+            <section className="container about-hero scroll-reveal scroll-reveal-delay-1">
                 <div className="about-hero-inner">
                     <div className="about-hero-text">
                         <p className="about-label">projetos.</p>
@@ -16,21 +15,16 @@ function Work() {
                 </div>
             </section>
 
-            {/* Grelha de Projetos */}
             <div className="container">
                 <div className="work-showcase-grid">
-                    {projectsData.map((project) => (
+                    {projectsData.map((project, index) => (
                         <Link
                             to={`/work/${project.slug}`}
-                            className="work-showcase-link"
+                            className={`work-showcase-link scroll-reveal scroll-reveal-delay-${(index % 3) + 1}`}
                             key={project.slug}
                         >
                             <article className="work-showcase-card">
                                 <div className="work-showcase-media">
-                                    {project.isNew && (
-                                        <span className="work-showcase-badge">New entry 🔥</span>
-                                    )}
-
                                     <img
                                         src={project.image}
                                         alt={`Preview do projeto ${project.title}`}

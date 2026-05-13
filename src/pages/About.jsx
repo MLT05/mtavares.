@@ -12,14 +12,9 @@ import foto12 from "../assets/FOTOGRAFIAS MINHAS/eu_3.jpeg"
 import foto13 from "../assets/FOTOS_AMAIS/gatinhos.jpeg"
 import foto14 from "../assets/FOTOS_AMAIS/girassol.jpg"
 import foto15 from "../assets/Group 24.svg"
-import fotohome from "../assets/FOTOGRAFIAS MINHAS/IMG_5872.JPG"
-import photo2 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_PORTO.jpeg"
-import photo3 from "../assets/FOTOGRAFIAS MINHAS/MARIANA_UNI.JPG"
-import photo4 from "../assets/FOTOGRAFIAS MINHAS/IMG_0500.jpeg"
-import photo5 from "../assets/FOTOGRAFIAS MINHAS/IMG_1449.jpeg"
+import { FiInstagram, FiLinkedin, FiGithub } from "react-icons/fi"
 
 function About() {
-
     const carouselImages = [
         foto1,
         foto2,
@@ -106,7 +101,7 @@ function About() {
 
     return (
         <main className="about-page">
-            <section className="container about-hero">
+            <section className="container about-hero scroll-reveal scroll-reveal-delay-1">
                 <div className="about-hero-inner">
                     <div className="about-hero-text">
                         <p className="about-label">Sobre mim</p>
@@ -116,9 +111,42 @@ function About() {
                         </h1>
 
                         <p className="about-hero-body">
-                            Sou a <strong>Mariana Tavares</strong> e interesso-me por criatividade, inovação e trabalho em equipa, e valorizo a aprendizagem
+                            Sou a <strong>Mariana Tavares</strong> e interesso-me por criatividade, inovação e trabalho
+                            em equipa, e valorizo a aprendizagem
                             contínua em áreas ligadas ao design e ao digital.
                         </p>
+
+                        <div className="about-social-links" aria-label="Redes sociais">
+                            <a
+                                href="https://www.instagram.com/click.by.mary_/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="about-social-link"
+                                aria-label="Instagram da Mariana"
+                            >
+                                <FiInstagram />
+                            </a>
+
+                            <a
+                                href="https://www.linkedin.com/in/marianaltavares/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="about-social-link"
+                                aria-label="LinkedIn da Mariana"
+                            >
+                                <FiLinkedin />
+                            </a>
+
+                            <a
+                                href="https://github.com/MLT05"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="about-social-link"
+                                aria-label="GitHub da Mariana"
+                            >
+                                <FiGithub />
+                            </a>
+                        </div>
 
                         <div className="about-hero-tags" aria-label="Informação principal">
                             <span className="about-hero-tag">21 anos</span>
@@ -130,15 +158,15 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="about-hero-photos">
+                    <div className="about-hero-photos scroll-reveal scroll-reveal-delay-2">
                         <div className="about-photo">
-                            <img src={foto15} alt="Retrato da Mariana"/>
+                            <img src={foto15} alt="Retrato da Mariana" />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="about-slider-section">
+            <section className="about-slider-section scroll-reveal scroll-reveal-delay-1">
                 <div className="container">
                     <div className="section-top">
                         <p className="section-tag">Para além do design.</p>
@@ -149,7 +177,7 @@ function About() {
                             <div className="about-slider-track">
                                 {[...carouselImages, ...carouselImages].map((image, index) => (
                                     <div className="about-slide" key={`top-slide-${index}`}>
-                                        <img src={image} alt={`Arquivo visual superior ${index + 1}`}/>
+                                        <img src={image} alt={`Arquivo visual superior ${index + 1}`} />
                                     </div>
                                 ))}
                             </div>
@@ -159,7 +187,7 @@ function About() {
                             <div className="about-slider-track about-slider-track-reverse">
                                 {[...carouselImages, ...carouselImages].map((image, index) => (
                                     <div className="about-slide" key={`bottom-slide-${index}`}>
-                                        <img src={image} alt={`Arquivo visual inferior ${index + 1}`}/>
+                                        <img src={image} alt={`Arquivo visual inferior ${index + 1}`} />
                                     </div>
                                 ))}
                             </div>
@@ -169,15 +197,20 @@ function About() {
             </section>
 
             <section className="container about-journey-section">
-                <div className="section-top">
+                <div className="section-top scroll-reveal scroll-reveal-delay-1">
                     <p className="section-tag">O meu percurso.</p>
                 </div>
 
-                <h2 className="about-section-title">O caminho que me trouxe até aqui</h2>
+                <h2 className="about-section-title scroll-reveal scroll-reveal-delay-2">
+                    O caminho que me trouxe até aqui
+                </h2>
 
                 <div className="about-journey-grid">
-                    {journeyItems.map((item) => (
-                        <article className="journey-card" key={item.id}>
+                    {journeyItems.map((item, index) => (
+                        <article
+                            className={`journey-card scroll-reveal scroll-reveal-delay-${(index % 3) + 1}`}
+                            key={item.id}
+                        >
                             <span className="journey-number">{item.number}</span>
                             <p className="journey-meta">{item.meta}</p>
                             <h3>{item.title}</h3>
@@ -188,16 +221,20 @@ function About() {
             </section>
 
             <section className="container about-goals-section">
-                <div className="section-top">
+                <div className="section-top scroll-reveal scroll-reveal-delay-1">
                     <p className="section-tag">O que procuro.</p>
                 </div>
 
-
-                <h2 className="about-section-title">Objetivos atuais</h2>
+                <h2 className="about-section-title scroll-reveal scroll-reveal-delay-2">
+                    Objetivos atuais
+                </h2>
 
                 <div className="about-goals-grid">
-                    {goals.map((goal) => (
-                        <article className="goal-metric-card" key={goal.id}>
+                    {goals.map((goal, index) => (
+                        <article
+                            className={`goal-metric-card scroll-reveal scroll-reveal-delay-${(index % 3) + 1}`}
+                            key={goal.id}
+                        >
                             <div className="goal-metric-number">{goal.number}</div>
                             <p className="goal-metric-label">{goal.label}</p>
                             <p className="goal-metric-description">{goal.description}</p>
@@ -206,10 +243,9 @@ function About() {
                 </div>
             </section>
 
-
-            <section className="container tools-section">
+            <section className="container tools-section scroll-reveal scroll-reveal-delay-1">
                 <div className="section-top tools-top">
-                <p className="section-tag">Ferramentas do meu processo de trabalho</p>
+                    <p className="section-tag">Ferramentas do meu processo de trabalho</p>
                 </div>
 
                 <div className="tools-marquee">
