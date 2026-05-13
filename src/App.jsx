@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom"
-import { useLayoutEffect } from "react"
+import { useEffect, useLayoutEffect } from "react"
 import Navbar from "./components/Navbar.jsx"
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
@@ -11,13 +11,35 @@ import Retex from "./pages/work_pages/RETEX.jsx"
 import Hortaranda from "./pages/work_pages/HORTARANDA.jsx"
 import Footer from "./components/Footer.jsx"
 import ContactSection from "./components/ContactSection.jsx"
-import useScrollReveal from "./hooks/useScrollReveal..js"
+import useScrollReveal from "./hooks/useScrollReveal.js"
 
 function ScrollToTop() {
     const { pathname } = useLocation()
 
+    useEffect(() => {
+        if ("scrollRestoration" in window.history) {
+            window.history.scrollRestoration = "manual"
+        }
+    }, [])
+
     useLayoutEffect(() => {
-        window.scrollTo(0, 0)
+        document.documentElement.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant",
+        })
+
+        document.body.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant",
+        })
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant",
+        })
     }, [pathname])
 
     return null
