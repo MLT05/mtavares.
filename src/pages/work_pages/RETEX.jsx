@@ -2,9 +2,12 @@ import retexLogo from "../../assets/RETEX/RETEX_LOGO.svg"
 import retexScreen from "../../assets/RETEX/retex-phones.svg"
 import marianaImg from "../../assets/RETEX/RETEX_LOGO.svg"
 
-import { FiInstagram, FiLinkedin } from "react-icons/fi"
+import { FiInstagram, FiLinkedin, FiExternalLink } from "react-icons/fi"
 
 function Retex() {
+    const recommendationLetterUrl =
+        "https://drive.google.com/file/d/1Lww185ogfeqVeZLNhFP5gM2ksg2g8SgZ/view?usp=share_link"
+
     const projectMeta = [
         { id: "year", label: "Ano", value: "2025" },
         { id: "role", label: "O Meu Papel", value: "UX/UI Design · Gestão de Redes Sociais" },
@@ -97,6 +100,18 @@ function Retex() {
                         <p className="project-description">
                             Plataforma que revoluciona a forma como lidamos com o desperdício têxtil.
                         </p>
+
+                        <a
+                            href={recommendationLetterUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="project-recommendation-button"
+                            aria-label="Abrir carta de recomendação da RETEX"
+                            title="Abrir carta de recomendação da RETEX"
+                        >
+                            <span>Ver carta de recomendação</span>
+                            <FiExternalLink aria-hidden="true" focusable="false" />
+                        </a>
                     </div>
 
                     <div className="project-hero-image-card">
