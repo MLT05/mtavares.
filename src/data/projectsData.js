@@ -6,7 +6,7 @@ import retexImg from "../assets/RETEX/website.svg"
 const projectsData = [
     {
         slug: "tuts",
-        meta: "WEB DESIGN @2026",
+        meta: "UX/UI DESIGN & DEV @2026",
         title: "Tut'S",
         description: "Plataforma de auto-tutoria com IA para apoio ao estudo autónomo no ensino superior, com foco em fiabilidade, personalização e ética.",
         image: tutsImg,
@@ -15,7 +15,7 @@ const projectsData = [
     },
     {
         slug: "retex",
-        meta: "GRAPHIC DESIGN @2025",
+        meta: "UX/UI DESIGN @2025",
         title: "RETEX",
         description: "Plataforma que revoluciona a forma como lidamos com o desperdício têxtil.",
         image: retexImg,
@@ -24,7 +24,7 @@ const projectsData = [
     },
     {
         slug: "nabu",
-        meta: "UX/UI DESIGN @2024",
+        meta: "UX/UI DESIGN & DEV @2024",
         title: "NABU",
         description: "Um conceito de organização doméstica e planeamento com foco em simplicidade, clareza e utilidade.",
         image: nabuImg,

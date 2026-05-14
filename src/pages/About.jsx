@@ -209,7 +209,7 @@ function About() {
                 </div>
 
                 <h2 className="about-section-title scroll-reveal scroll-reveal-delay-2">
-                    O caminho que me trouxe até aqui
+                    O caminho que me trouxe até aqui.
                 </h2>
 
                 <div className="about-journey-grid">
@@ -233,7 +233,7 @@ function About() {
                 </div>
 
                 <h2 className="about-section-title scroll-reveal scroll-reveal-delay-2">
-                    Objetivos atuais
+                    Objetivos atuais.
                 </h2>
 
                 <div className="about-goals-grid">
