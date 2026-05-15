@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import projectsData from "../data/projectsData"
+import projectsData from "../../data/projectsData.js"
 
 function WorkCards() {
     return (
