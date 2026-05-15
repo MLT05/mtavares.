@@ -1327,23 +1327,25 @@ img {
   color: #6b645c;
 }
 .project-recommendation-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  margin-top: 1.5rem;
-  padding: 0.95rem 1.4rem;
-  width: fit-content;
-  max-width: 100%;
-  border-radius: 999px;
-  background-color: #111111;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 1.2;
-  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
-}
-
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        width: fit-content;
+        max-width: 100%;
+        margin-top: 1.5rem;
+        padding: 0.9rem 1.15rem;
+        border: 1px solid rgba(17, 17, 17, 0.12);
+        border-radius: 999px;
+        background-color: #111111;
+        color: #f6f2eb;
+        font-size: 0.95rem;
+        font-weight: 500;
+        line-height: 1;
+        text-decoration: none;
+        transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease,
+          box-shadow 0.2s ease;
+        align-self: flex-start; }
 .project-recommendation-button:hover {
   background-color: #222222;
   transform: translateY(-2px);
@@ -1360,13 +1362,6 @@ img {
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
-  .project-recommendation-button {
-    display: flex;
-    width: 100%;
-    padding: 1rem 1.25rem;
-  }
-}
 .project-figma-section {
   margin-top: 4rem;
 }
@@ -1378,6 +1373,15 @@ img {
   overflow: hidden;
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.project-tools-section {
+  margin-top: 40px;
+}
+
+
+
+.project-tools-section .section-top {
+  margin-bottom: 16px;
 }
 
 .project-figma-iframe {

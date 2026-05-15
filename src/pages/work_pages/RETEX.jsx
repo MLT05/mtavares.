@@ -14,6 +14,8 @@ function Retex() {
         { id: "team", label: "Equipa", value: "4 elementos" },
     ]
 
+    const projectTags = ["UX/UI Design", "Web Design", "Visual Design", "Social Media"]
+
     const teamMembers = [
         { id: "mariana", name: "Mariana Tavares", image: marianaImg },
         { id: "maria", name: "Maria Leonor Frias", image: marianaImg },
@@ -182,6 +184,7 @@ function Retex() {
                     ))}
                 </div>
             </section>
+
         </main>
     )
 }

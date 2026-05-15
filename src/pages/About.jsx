@@ -131,7 +131,7 @@ function About() {
                                 className="about-social-link"
                                 aria-label="Instagram da Mariana"
                             >
-                                <FiInstagram />
+                                <FiInstagram/>
                             </a>
 
                             <a
@@ -141,7 +141,7 @@ function About() {
                                 className="about-social-link"
                                 aria-label="LinkedIn da Mariana"
                             >
-                                <FiLinkedin />
+                                <FiLinkedin/>
                             </a>
 
                             <a
@@ -151,7 +151,7 @@ function About() {
                                 className="about-social-link"
                                 aria-label="GitHub da Mariana"
                             >
-                                <FiGithub />
+                                <FiGithub/>
                             </a>
                         </div>
 
@@ -160,14 +160,16 @@ function About() {
                             <span className="about-hero-tag">Porto</span>
                             <span className="about-hero-tag">Licenciatura em MTC</span>
                             <span className="about-hero-tag">UI/UX</span>
-                            <span className="about-hero-tag">Web design</span>
-                            <span className="about-hero-tag">Design digital</span>
+                            <span className="about-hero-tag">Web Design</span>
+                            <span className="about-hero-tag">Digital Experience</span>
+                            <span className="about-hero-tag">User-Centered Design</span>
+                            <span className="about-hero-tag">Web Development</span>
                         </div>
                     </div>
 
                     <div className="about-hero-photos scroll-reveal scroll-reveal-delay-2">
                         <div className="about-photo">
-                            <img src={foto15} alt="Retrato da Mariana" />
+                            <img src={foto15} alt="Retrato da Mariana"/>
                         </div>
                     </div>
                 </div>
@@ -176,7 +178,7 @@ function About() {
             <section className="about-slider-section scroll-reveal scroll-reveal-delay-1">
                 <div className="container">
                     <div className="section-top">
-                        <p className="section-tag">Para além do design</p>
+                    <p className="section-tag">Para além do design</p>
                     </div>
 
                     <div className="about-slider-dual">
