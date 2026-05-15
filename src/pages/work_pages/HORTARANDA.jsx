@@ -13,6 +13,8 @@ function Hortaranda() {
         { id: "team", label: "Equipa", value: "4 elementos" },
     ]
 
+    const projectTags = ["Vanilla JS", "LocalStorage", "DOM Manipulation", "UX Design"]
+
     const teamMembers = [
         { id: "francisco", name: "Francisco Seabra", image: franciscoImg },
         { id: "carlos", name: "Carlos Teixeira", image: carlosImg },
@@ -83,6 +85,14 @@ function Hortaranda() {
                                     <FiGithub />
                                 </a>
                             </div>
+                        </div>
+
+                        <div className="project-tags">
+                            {projectTags.map((tag) => (
+                                <span key={tag} className="project-tag">
+                                    {tag}
+                                </span>
+                            ))}
                         </div>
 
                         <p className="project-description">

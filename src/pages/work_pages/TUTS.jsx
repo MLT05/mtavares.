@@ -38,6 +38,8 @@ function Tuts() {
         { id: "team", label: "Equipa", value: "4 elementos" },
     ]
 
+    const projectTags = ["UX/UI Design", "Figma", "Branding", "RAG / IA"]
+
     const teamMembers = [
         { id: "carlos", name: "Carlos Teixeira", image: carlosImg },
         { id: "mariana", name: "Mariana Tavares", image: marianaImg },
@@ -119,6 +121,14 @@ function Tuts() {
                                     <FiLinkedin />
                                 </a>
                             </div>
+                        </div>
+
+                        <div className="project-tags">
+                            {projectTags.map((tag) => (
+                                <span key={tag} className="project-tag">
+                                    {tag}
+                                </span>
+                            ))}
                         </div>
 
                         <p className="project-description">

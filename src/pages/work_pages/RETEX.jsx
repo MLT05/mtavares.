@@ -99,6 +99,14 @@ function Retex() {
                             </div>
                         </div>
 
+                        <div className="project-tags">
+                            {projectTags.map((tag) => (
+                                <span key={tag} className="project-tag">
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
+
                         <p className="project-description">
                             Plataforma que revoluciona a forma como lidamos com o desperdício têxtil.
                         </p>
@@ -184,7 +192,6 @@ function Retex() {
                     ))}
                 </div>
             </section>
-
         </main>
     )
 }

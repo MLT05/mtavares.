@@ -1326,6 +1326,73 @@ img {
   line-height: 1.8;
   color: #6b645c;
 }
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px 0 18px;
+  max-width: 560px;
+}
+
+.project-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid #1e1e1e;
+  border-radius: 999px;
+  background: #1e1e1e;
+  color: #ffffff;
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+
+@media (max-width: 900px) {
+  .project-tags {
+    gap: 9px;
+    margin: 12px 0 16px;
+    max-width: 100%;
+  }
+
+  .project-tag {
+    min-height: 34px;
+    padding: 8px 11px;
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-tags {
+    gap: 8px;
+    margin: 12px 0 14px;
+  }
+
+  .project-tag {
+    min-height: 32px;
+    padding: 7px 10px;
+    font-size: 0.68rem;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (max-width: 420px) {
+  .project-tags {
+    gap: 7px;
+  }
+
+  .project-tag {
+    min-height: 30px;
+    padding: 6px 9px;
+    font-size: 0.64rem;
+  }
+}
 .project-recommendation-button {
         display: inline-flex;
         align-items: center;
